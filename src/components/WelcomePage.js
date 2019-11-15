@@ -1,4 +1,6 @@
 import React from "react";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import CharacterList from "./CharacterList";
 
 export default function WelcomePage() {
   return (
@@ -11,6 +13,10 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <div>
+        <Link to="/CharacterList">View Characters!</Link>
+        <Route exact path= "/CharacterList" component={CharacterList}/>
+      </div>
     </section>
   );
 }
