@@ -14,8 +14,8 @@ export default function WelcomePage() {
         />
       </header>
       <div>
-        <Link to="/CharacterList">View Characters!</Link>
-        <Route exact path= "/CharacterList" component={CharacterList}/>
+        
+        
       </div>
     </section>
   );
